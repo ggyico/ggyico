@@ -4,13 +4,12 @@
 name: Python application
 
 on:
-  schedule:
-  - cron: "0 0 8 ****"
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
+  schedule:
+    - cron: '0 0 * * *'
 permissions:
   contents: read
 
